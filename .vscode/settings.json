@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/c0e3aef2-4319-4926-9f5b-6f72000c27a3/resourceGroups/Generatify/providers/Microsoft.Web/sites/Generatify",
+    "appService.deploySubpath": "."
+}

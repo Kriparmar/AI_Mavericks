@@ -1,0 +1,25 @@
+﻿{
+	"name": "Generatify",
+	"version": "1.0",
+	"manifest_version": 2,
+
+	"description": "An AI tool to generate based on keywords",
+	"icons": {
+		"128": "icon128.png"
+	},
+	"browser_action": {
+		"default_icon": "img/defaultIcon19x19.png",
+		"default_popup": "popup.html",
+		"default_title": "Generatify"
+	},
+	"content_scripts": [ {
+	"js":["js/background.js"],
+	"css":["css/popup.css"],	
+	"matches": [ "*://*/*" ],
+	"run_at": "document_start"
+	} ],
+	"minimum_chrome_version": "18",
+	"permissions": [ "http://*/*", "https://*/*", "unlimitedStorage", "contextMenus", "cookies", "tabs", "notifications","runtime" ],
+	"content_security_policy": "script-src 'self' 'unsafe-eval' https://ajax.googleapis.com https://code.jquery.com https://cdn.jsdelivr.net/npm/ https://cdnjs.cloudflare.com/; object-src 'self'"
+
+}
